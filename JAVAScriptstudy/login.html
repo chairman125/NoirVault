@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Noir Vault</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark.css">
+    <style>
+        /* 중앙 정렬을 위한 스타일 */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .login-form {
+            width: 300px;
+            text-align: center;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-form button:hover {
+            background-color: #333;
+        }
+        .login-form a {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: #000;
+            text-decoration: none;
+        }
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-banner">
+                <div class="banner">
+                    <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Bag (<span id="bag-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>LOGIN</h2>
+        <form action="login.php" method="post" class="login-form">
+            <label for="username">Email</label>
+            <input type="email" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <a href="forgot_password.html">Forgot your password?</a>
+            <button type="submit">SIGN IN</button>
+            <a href="create_account.html">Create an Account</a>
+        </form>
+    </div>
+    <script src="dark.js"></script>
+    <button id="theme-toggle">🌓</button>
+</body>
+</html>

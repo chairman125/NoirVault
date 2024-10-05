@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
+    <title>Quick Order Form</title> <!-- 문서 제목 설정 -->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="assignment.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container">
+        <div class="logo-banner">
+            <div class="banner">
+                <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="brands.html">BRANDS</a></li>
+            <li><a href="sale.html">SALE</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cart.html">Bag (<span id="bag-count">0</span>)</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="container-form"> <!-- 컨테이너 디브로 전체 폼을 감싸는 역할 -->
+        <form id="orderForm"> <!-- 폼 시작, 폼의 아이디는 orderForm -->
+            <!-- 이름 입력 필드 -->
+            <label for="name">Name</label> <!-- 이름 입력 필드를 위한 레이블 -->
+            <input type="text" id="name" name="name"> <!-- 텍스트 입력 필드, 아이디와 이름은 name -->
+
+            <!-- 아이디 입력 필드 -->
+            <label for="username">Username</label> <!-- 아이디 입력 필드를 위한 레이블 -->
+            <input type="text" id="username" name="username"> <!-- 텍스트 입력 필드, 아이디와 이름은 username -->
+
+            <!-- 이메일 입력 필드 -->
+            <label for="email">Email</label> <!-- 이메일 입력 필드를 위한 레이블 -->
+            <input type="text" id="email" name="email"> <!-- 이메일 입력 필드, 아이디와 이름은 email -->
+
+            <!-- 연락처 입력 필드 -->
+            <label for="contact">Contact Number</label> <!-- 연락처 입력 필드를 위한 레이블 -->
+            <input type="text" id="contact" name="contact"> <!-- 텍스트 입력 필드, 아이디와 이름은 contact -->
+
+            <!-- 패스워드 입력 필드 -->
+            <label for="password">Password</label> <!-- 패스워드 입력 필드를 위한 레이블 -->
+            <input type="password" id="password" name="password"> <!-- 패스워드 입력 필드, 아이디와 이름은 password -->
+
+            <!-- 패스워드 확인 입력 필드 -->
+            <label for="confirm_password">Confirm Password</label> <!-- 패스워드 확인 입력 필드를 위한 레이블 -->
+            <input type="password" id="confirm_password" name="confirm_password"> <!-- 패스워드 확인 입력 필드, 아이디와 이름은 confirm_password -->
+
+            <!-- 제품 유형 선택 필드셋 -->
+            <fieldset id="product_type">
+                <legend>Product Size</legend> <!-- 필드셋 제목 -->
+                <div class="grid-container">
+                    <!-- 각 제품 유형 선택 항목 -->
+                    <div>
+                        <input type="radio" id="starter" name="product_type" value="Starter">
+                        <label for="starter">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="professional" name="product_type" value="Professional">
+                        <label for="professional">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="enterprise" name="product_type" value="Enterprise">
+                        <label for="enterprise">Large</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="student" name="product_type" value="Student">
+                        <label for="student">X-Large</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 주문 수량 선택 필드셋 -->
+            <fieldset id="order_quantity">
+                <legend>Order Quantity</legend> <!-- 필드셋 제목 -->
+                <div class="quantity-container">
+                    <!-- 수량 선택 드롭다운과 직접 입력 필드 -->
+                    <select id="quantity_select" name="quantity_select">
+                        <option value="" selected disabled>Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <input type="number" id="quantity_input" name="quantity_input" min="10" placeholder="10+">
+                </div>
+                <!-- 안내 문구 -->
+                <p>For orders of 10 or more items, please enter the quantity and submit your request. Our sales team will contact you as soon as possible.</p>
+            </fieldset>
+
+            <!-- 약관 동의 필드셋 -->
+            <fieldset id="terms_agreement">
+                <legend>  Terms of Agreement  </legend> <!-- 필드셋 제목 -->
+                <div class="terms-container">
+                    <!-- Each terms agreement item -->
+                    <div>
+                        <input type="checkbox" id="privacy_agreement" name="terms_agreement" value="privacy">
+                        <label for="privacy_agreement"><a href="https://www.google.com" target="_blank">Consent to Collect and Use Personal Information (Required)</a></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="service_agreement" name="terms_agreement" value="service">
+                        <label for="service_agreement"><a href="https://www.google.com" target="_blank">Agree to Terms of Service (Required)</a></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="email_agreement" name="terms_agreement" value="email">
+                        <label for="email_agreement"><a href="https://www.google.com" target="_blank">Consent to Receive Promotional Emails (Optional)</a></label>
+                    </div>
+                </div>
+                
+            </fieldset>
+
+            <!-- 버튼 컨테이너 -->
+            <div class="button-container">
+                <a href="https://www.google.com" target="_blank" class="button">Edition Detail</a> <!-- Edition Detail 링크 버튼 -->
+                <input type="submit" value="Submit"> <!-- 제출 버튼 -->
+            </div>
+        </form>
+    </div>
+    <script src="assignment.js"></script> <!-- 외부 자바스크립트 파일 연결 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function isMobile() {
+                return window.innerWidth <= 768; // 화면 너비가 768px 이하이면 모바일로 간주
+            }
+
+            if (isMobile()) {
+                document.querySelector('.navbar').style.display = 'none';
+                document.querySelector('.container-form').classList.add('mobile');
+            }
+        });
+    </script>
+    <script src="dark.js"></script> 
+    <button id="theme-toggle">🌓</button>
+</body>
+</html>

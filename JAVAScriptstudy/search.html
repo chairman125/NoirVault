@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Noir Vault</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-banner">
+                <div class="banner">
+                    <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Bag (<span id="bag-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="filter-sort-container">
+            <div class="filter-options">
+                <h3>Filter By</h3>
+                <label>
+                    <input type="checkbox" name="category" value="clothing"> Clothing
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="shoes"> Shoes
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="accessories"> Accessories
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="new"> New Arrivals
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="sale"> On Sale
+                </label>
+            </div>
+            <div class="sort-options">
+                <h3>Sort By</h3>
+                <select name="sort" id="sort">
+                    <option value="popularity">Popularity</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <h2>Search Our Collection</h2>
+            <form id="searchForm" class="search-form">
+                <input type="text" name="query" id="search-input" placeholder="Search for products, brands, etc." required>
+                <button type="submit">Search</button>
+            </form>
+            <div class="search-results" id="searchResults">
+                <!-- 검색 결과가 여기에 표시될 것입니다 -->
+                <p>No results found. Please try a different search.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="search.js"></script>
+<script src="dark.js"></script> 
+<button id="theme-toggle">🌓</button>
+</body>
+</html>

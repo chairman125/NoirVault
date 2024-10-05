@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 5 Details</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-banner">
+                <div class="banner">
+                    <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Bag (<span id="bag-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-detail"
+         data-name="Yohji Yamamoto Pour Homme Nike Air Force 1"
+         data-category="shoes"
+         data-url="product5.html"
+         data-img="images/Yohji Yamamoto Pour Homme Nike Air Force 1.jpg"
+         data-price="750"
+         data-onSale="true"
+         data-salePrice="600">
+        <img src="images/Yohji Yamamoto Pour Homme Nike Air Force 1.jpg" alt="Product 5">
+        <h2>Yohji Yamamoto Pour Homme Nike Air Force 1</h2>
+        <p>Description: This exclusive collaboration between Yohji Yamamoto Pour Homme and Nike transforms the iconic Air Force 1 with Yamamoto's distinctive style. The design features high-quality materials and unique details that stand out.</p>
+        <p>Price: $<span id="product-price">750</span></p>
+        <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <script src="product.js"></script>
+    <script src="dark.js"></script> 
+    <button id="theme-toggle">🌓</button>
+</body>
+</html>
