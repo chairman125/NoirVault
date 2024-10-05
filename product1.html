@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1 Details</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-banner">
+                <div class="banner">
+                    <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Bag (<span id="bag-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-detail"
+         data-name="Alexander Mcqueen Comme des Garcons"
+         data-category="clothing"
+         data-url="product1.html"
+         data-img="images/Alexander Mcqueen Comme des Garcons.jpg"
+         data-price="25000"
+         data-onSale="true"
+         data-salePrice="20000">
+        <img src="images/Alexander Mcqueen Comme des Garcons.jpg" alt="Product 1">
+        <h2>Alexander Mcqueen Comme des Garcons</h2>
+        <p>Description of Product 1: A luxurious designer coat from Comme des Garçons, featuring a unique blend of grey wool and intricate embroidery. With its sophisticated details and bold design, this coat is perfect for making a fashion statement.</p>
+        <p>Price: $<span id="product-price">25000</span></p>
+        <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <script src="product.js"></script>
+    <script src="dark.js"></script> 
+    <button id="theme-toggle">🌓</button>
+</body>
+</html>

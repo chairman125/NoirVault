@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Noir Vault</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-banner">
+                <div class="banner">
+                    <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Bag (<span id="bag-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cart-container">
+        <h2>Shopping Bag</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product Details</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Shipping</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- 장바구니 아이템이 여기에 표시됩니다 -->
+            </tbody>
+        </table>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        <a href="assignment.html" class="btn2">Quick Order Form</a>
+    </div>
+    <script src="cart.js"></script>
+    <script src="dark.js"></script> 
+    <button id="theme-toggle">🌓</button>
+</body>
+</html>

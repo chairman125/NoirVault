@@ -1,0 +1,459 @@
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#theme-toggle:hover {
+    background-color: #dddddd;
+}
+
+/* Add dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background-color: #343a40;
+}
+
+/* Add additional dark mode styles as needed */
+/* Dark mode for body */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Dark mode for container-form */
+.container-form.dark-mode {
+    background-color: #333333;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode for form elements */
+input[type="text"].dark-mode,
+input[type="email"].dark-mode,
+input[type="tel"].dark-mode,
+input[type="date"].dark-mode,
+input[type="number"].dark-mode,
+input[type="password"].dark-mode,
+textarea.dark-mode,
+select.dark-mode {
+    background-color: #444444;
+    border-color: #ffffff;
+    color: #e0e0e0;
+}
+
+input[type="submit"].dark-mode,
+a.button.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+textarea.dark-mode {
+    background-color: #444444;
+    color: #e0e0e0;
+}
+
+.grid-container.dark-mode div,
+.terms-container.dark-mode div {
+    color: #e0e0e0;
+}
+
+/* Dark mode for buttons */
+button.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Dark mode for p, legend, fieldset */
+p.dark-mode {
+    color: #e0e0e0;
+}
+
+legend.dark-mode {
+    color: #e0e0e0;
+}
+
+fieldset.dark-mode {
+    border-color: #ffffff;
+}
+
+/* Dark mode for content-container */
+.content-container.dark-mode {
+    background-color: #333333;
+}
+
+.products.dark-mode, .youtube-links.dark-mode {
+    background-color: #333333;
+}
+
+.products h3.dark-mode, .youtube-links h3.dark-mode {
+    border-color: #e0e0e0;
+}
+
+/* Dark mode for product-list-container */
+.product-list-container.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.product-list-container h2.dark-mode {
+    color: #e0e0e0;
+}
+
+.product-item.dark-mode {
+    background-color: #555555;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.product-item p.dark-mode {
+    color: #e0e0e0;
+}
+
+/* Dark mode for video-wrapper */
+.youtube-links .video-wrapper.dark-mode {
+    background-color: #333333;
+}
+
+/* Dark mode for store-container */
+.store-container.dark-mode {
+    background-color: #333333;
+}
+
+.store-section.dark-mode, .subscribe-section.dark-mode, .help-section.dark-mode {
+    background-color: #333333;
+}
+
+.store-section h3.dark-mode, .subscribe-section h3.dark-mode, .help-section h3.dark-mode {
+    border-color: #e0e0e0;
+}
+
+.store-item.dark-mode {
+    background-color: #444444;
+    border-color: #ffffff;
+}
+
+.store-details p.dark-mode {
+    color: #e0e0e0;
+}
+
+.btn-directions.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.btn-directions.dark-mode:hover {
+    background-color: #ff6347;
+}
+
+/* Dark mode for help-section */
+.help-section ul li a.dark-mode {
+    color: #ffffff;
+}
+
+.help-section ul li a.dark-mode:hover {
+    color: #ff6347;
+}
+
+/* Dark mode for product-detail */
+.product-detail.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.product-detail h2.dark-mode {
+    color: #e0e0e0;
+}
+
+.product-detail p.dark-mode {
+    color: #e0e0e0;
+}
+
+.product-detail button.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.product-detail button.dark-mode:hover {
+    background-color: #ff6347;
+}
+
+/* Dark mode for cart-container */
+.cart-container.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.cart-container h2.dark-mode {
+    border-color: #ffffff;
+    color: #e0e0e0;
+}
+
+.cart-table.dark-mode th, .cart-table.dark-mode td {
+    border-color: #555555;
+    color: #e0e0e0;
+}
+
+.cart-table th.dark-mode {
+    background-color: #555555;
+}
+
+.remove-item.dark-mode {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.remove-item.dark-mode:hover {
+    background-color: #cc0000;
+}
+
+/* Dark mode for password-reset-container */
+.password-reset-container.dark-mode {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+.password-reset-form.dark-mode input {
+    background-color: #444444;
+    color: #e0e0e0;
+    border-color: #ffffff;
+}
+
+.password-reset-form.dark-mode button {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.password-reset-form.dark-mode button:hover {
+    background-color: #ff6347;
+}
+
+/* Dark mode for subscribe-section */
+.subscribe-section.dark-mode {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+.subscribe-section form.dark-mode input[type="email"] {
+    background-color: #444444;
+    color: #e0e0e0;
+    border-color: #ffffff;
+}
+
+.subscribe-section form.dark-mode button {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.subscribe-section form.dark-mode button:hover {
+    background-color: #ff6347;
+}
+
+/* Dark mode for create-account-container */
+.create-account-container.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.create-account-container h2.dark-mode {
+    color: #e0e0e0;
+}
+
+.create-account-form.dark-mode label {
+    color: #e0e0e0;
+}
+
+.create-account-form.dark-mode input[type="text"],
+.create-account-form.dark-mode input[type="email"],
+.create-account-form.dark-mode input[type="password"] {
+    background-color: #444444;
+    color: #e0e0e0;
+    border-color: #ffffff;
+}
+
+.create-account-form.dark-mode button {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.create-account-form.dark-mode button:hover {
+    background-color: #ff6347;
+}
+
+/* Dark mode for checkout-container */
+.checkout-container.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.checkout-container h2.dark-mode {
+    color: #e0e0e0;
+}
+
+.checkout-container p.dark-mode {
+    color: #e0e0e0;
+}
+
+.checkout-options .btn.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.checkout-options .btn.dark-mode:hover {
+    background-color: #ff6347;
+}
+
+/* Dark mode for navbar */
+.navbar.dark-mode {
+    background-color: #222222;
+    color: #e0e0e0;
+}
+
+.nav-links a.dark-mode {
+    color: #e0e0e0;
+}
+
+.nav-links a.dark-mode:hover {
+    color: #ff6347;
+}
+
+/* Dark mode for event */
+.event.dark-mode {
+    background-color: #444444;
+    color: #e0e0e0;
+}
+
+/* Dark mode for about-container */
+.about-container.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.about-section.dark-mode p {
+    color: #e0e0e0;
+}
+
+/* Dark mode for news-container */
+.news-container.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.news-content h3.dark-mode {
+    color: #e0e0e0;
+}
+
+.news-date.dark-mode {
+    color: #999999;
+}
+
+.news-summary.dark-mode {
+    color: #e0e0e0;
+}
+
+/* Dark mode for brands-container */
+.brands-container.dark-mode {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.brand-column.dark-mode p {
+    color: #e0e0e0;
+}
+
+/* Dark mode for sale-image-container */
+.sale-image-container.dark-mode img {
+    opacity: 0.8;
+}
+
+/* Dark mode for search-results */
+.search-results li.dark-mode {
+    background-color: #555555;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.search-results a.dark-mode {
+    color: #e0e0e0;
+}
+
+.search-results p.dark-mode {
+    color: #e0e0e0;
+}
+
+.filter-sort-container.dark-mode, .search-container.dark-mode {
+    background-color: #333333;
+}
+
+.search-form.dark-mode input[type="text"] {
+    background-color: #444444;
+    color: #e0e0e0;
+    border-color: #ffffff;
+}
+
+.search-form.dark-mode button {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.search-form.dark-mode button:hover {
+    background-color: #ff6347;
+}
+/* Dark mode for login form container */
+.login-container.dark-mode {
+    background-color: #333333;
+    color: #e0e0e0;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode for form elements */
+.login-container.dark-mode input[type="text"],
+.login-container.dark-mode input[type="email"],
+.login-container.dark-mode input[type="password"] {
+    background-color: #444444;
+    border-color: #ffffff;
+    color: #e0e0e0;
+}
+
+.login-container.dark-mode button {
+    background-color: #555555;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.login-container.dark-mode button:hover {
+    background-color: #ff6347;
+}
+
+/* Ensure placeholder text is visible */
+.login-container.dark-mode input::placeholder {
+    color: #bbbbbb;
+}
+
+/* Additional dark mode styling */
+.login-container.dark-mode label {
+    color: #e0e0e0;
+}
+
+.login-container.dark-mode a {
+    color: #ff6347;
+}

@@ -1,0 +1,87 @@
+/* 구독 폼 스타일 */
+.subscribe-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.subscribe-section h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.subscribe-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe-section input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.subscribe-section button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-section button:hover {
+    background-color: #ff6347;
+}
+
+/* Create Account 페이지 스타일 */
+.create-account-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.create-account-container h2 {
+    margin-bottom: 20px;
+}
+
+.create-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-account-form label {
+    text-align: left;
+}
+
+.create-account-form input[type="text"],
+.create-account-form input[type="email"],
+.create-account-form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-account-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-account-form button:hover {
+    background-color: #ff6347;
+}

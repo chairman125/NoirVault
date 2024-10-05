@@ -1,0 +1,349 @@
+/* 이벤트 페이지 스타일 */
+.event {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.event h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.event p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+/* About Us 페이지 스타일 */
+.about-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-left: 125px; /* 좌측 여백 */
+    padding-right: 175px; /* 우측 여백 */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    text-align: left;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* News 페이지 스타일 */
+.news-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-container h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.news-item img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.news-content {
+    width: 60%;
+}
+
+.news-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.news-summary {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Brands 페이지 스타일 */
+.brands-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.brands-container h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.brands-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+.brand-column h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.brand-column p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Sale 페이지 스타일 */
+.sale-image-container {
+    width: 100%;
+    height: calc(100vh - 140px); /* 네비게이션 바의 높이 140px를 제외한 전체 높이 */
+    overflow: hidden;
+}
+
+.sale-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Search 페이지 스타일 */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-results li {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.search-results li:hover {
+    transform: scale(1.05);
+}
+
+.search-results a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.search-results img {
+    width: 100%;
+    height: auto;
+}
+
+.search-results p {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+.filter-sort-container {
+    width: 25%;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.search-container {
+    width: 75%;
+    text-align: center;
+}
+
+.search-container h2 {
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #ff6347;
+}
+
+.filter-options, .sort-options {
+    margin-bottom: 20px;
+}
+
+.filter-options h3, .sort-options h3 {
+    margin-bottom: 10px;
+}
+
+.filter-options label, .sort-options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sort-options select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search-results {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Create Account 페이지 스타일 */
+.create-account-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.create-account-container h2 {
+    margin-bottom: 20px;
+}
+
+.create-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-account-form label {
+    text-align: left;
+}
+
+.create-account-form input[type="text"],
+.create-account-form input[type="email"],
+.create-account-form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-account-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-account-form button:hover {
+    background-color: #ff6347;
+}
+
+.checkout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 15px;
+    border: #000;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.checkout-container h2 {
+    margin-bottom: 20px;
+}
+
+.checkout-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.checkout-options {
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.checkout-options .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.checkout-options .btn:hover {
+    background-color: #ff6347;
+}

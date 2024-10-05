@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 4 Details</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-banner">
+                <div class="banner">
+                    <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Bag (<span id="bag-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-detail"
+         data-name="Maison Margiela Adidas Samba"
+         data-category="shoes"
+         data-url="product4.html"
+         data-img="images/Maison Margiela Adidas Samba.jpg"
+         data-price="300"
+         data-onSale="false"
+         data-salePrice="250">
+        <img src="images/Maison Margiela Adidas Samba.jpg" alt="Product 4">
+        <h2>Maison Margiela Adidas Samba</h2>
+        <p>Description: This collaboration between Maison Margiela and Adidas reimagines the classic Samba silhouette with luxurious materials and Maison Margiela's signature deconstructed design. Perfect for sneaker enthusiasts and fashion lovers alike.</p>
+        <p>Price: $<span id="product-price">300</span></p>
+        <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <script src="product.js"></script>
+    <script src="dark.js"></script> 
+    <button id="theme-toggle">🌓</button>
+</body>
+</html>
